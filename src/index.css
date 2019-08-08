@@ -54,3 +54,10 @@ form {
     width: 70%;
     border-bottom-width: medium;
 }
+
+.getPrize {
+  text-decoration: bold;
+  font-family: cursive;
+  font-size: 30px;
+color: green;
+}

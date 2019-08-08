@@ -14,7 +14,6 @@ export class UserList extends Component {
                     <tbody>
                         <tr>
                             <th>Firstname</th>
-                            <th>Lastname</th>
                         </tr>
 
                         {this.props.dataSent.map((item) => (
@@ -22,7 +21,9 @@ export class UserList extends Component {
                             <User key={item._id}
                                 
                                 firstname={item.firstname} 
-                                lastname= {item.lastname}/>
+                                lastname= {item.lastname}
+                                prize={item.prize}
+                                accountNumber={item.accountNumber}/>
 
                         ))}
 

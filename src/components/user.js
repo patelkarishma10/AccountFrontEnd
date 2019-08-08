@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export class User extends Component {
     render(props) {
+
+        const {
+    firstname
+} = this.props
         return (
 
             <tr>
-                <td>{this.props.firstname}</td>
-                <td>{this.props.lastname}</td>
+                <button className="btn btn-dark">
+                    <Link to={"/user/" + firstname}>{firstname}</Link>
+                </button>
             </tr>
 
 
