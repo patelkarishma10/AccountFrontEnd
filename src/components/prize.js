@@ -17,7 +17,7 @@ export class Prize extends Component {
     id
 } = this.props
         axios
-            .delete("http://producer:8080/user/deleteOne/" + id)
+            .delete("/producer/user/deleteOne/" + id)
             .then(response => {
                 console.log("deleted account")
                 window.alert("Delete item?")
