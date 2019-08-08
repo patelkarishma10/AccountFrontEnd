@@ -22,7 +22,7 @@ export class Register extends Component {
             this.setState({ responseData: "Please fill all fields" })
         } else {
             axios
-                .post("http://localhost:8080/user/create", newItem)
+                .post("http://producer:8080/user/create", newItem)
 
                 .then(response => {
                     this.props.passedFunction();

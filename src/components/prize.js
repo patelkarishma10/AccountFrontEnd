@@ -17,10 +17,10 @@ export class Prize extends Component {
     id
 } = this.props
         axios
-            .delete("http://localhost:8080/user/deleteOne/" + id)
+            .delete("http://producer:8080/user/deleteOne/" + id)
             .then(response => {
-                console.log("deleted recipe")
-                window.alert("Item dleted")
+                console.log("deleted account")
+                window.alert("Delete item?")
                 this.props.passedFunction();
             });
     };

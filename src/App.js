@@ -15,7 +15,7 @@ export class App extends Component {
 
   onLoad = () => {
     axios
-      .get("http://localhost:8080/user/getAll")
+      .get("http://producer:8080/user/getAll")
       .then(response => {
         this.setState({
           data: response.data
